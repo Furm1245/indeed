@@ -1,0 +1,99 @@
+.background {
+display: flex;
+flex-direction: column;
+align-items: center;
+margin-bottom: 7rem;
+}
+
+.search {
+margin-top: 5rem;
+margin-bottom:1.5rem ;
+}
+
+.search label {
+font-weight: 700;
+}
+
+.inputs {
+margin-right: 1rem;
+padding: .5rem 10rem;
+border: 1px solid #949494;
+border-radius: 10px;
+}
+
+.inside {
+display: flex;
+align-items: center;
+}
+
+.buttons {
+margin-right: 1rem;
+margin-bottom: 3rem;
+}
+
+.cards {
+display: flex;
+justify-content: center;
+border-top: 1px solid #e4e2e0;
+padding-top: 3rem;
+}
+
+.card2 {
+display:flex;
+flex-direction: column;
+border: 1px solid grey;
+border-radius: 10px;
+padding: 0.5rem 2rem;
+width: 28rem;
+height: 80%;
+min-height: 35rem;
+overflow: auto;
+position: sticky;
+top: 0;
+}
+
+.sections{
+ border-bottom: 2px solid rgba(0,0,0,.08);
+padding-bottom: 1rem;
+}
+
+@media all and (max-width: 980px) {
+.card2 {
+display: none;
+}
+.inputs {
+margin-right: 1rem;
+padding: .5rem 5rem;
+}
+.background {
+min-height: 100vh;
+}
+
+} 
+
+
+@media all and (max-width: 430px) {
+.inputs {
+margin-right: 1rem;
+padding: .5rem 3rem;
+}
+
+.inside {
+flex-direction: column;
+}
+
+.inside button {
+padding:.3rem 7.5rem
+}
+
+.filter {
+margin-bottom: .75rem;
+}
+} 
+
+@media all and (max-width: 525px) {
+.inputs {
+margin-right: 1rem;
+padding: .5rem 3rem;
+}
+} 

@@ -1,0 +1,27 @@
+.page {
+min-height: 90vh;
+margin-bottom: 5rem;
+}
+
+
+.parent {
+width: 32rem;
+margin-top: 4rem;
+margin-left: 10rem;
+}
+
+.sections {
+margin-top: .5rem;
+border-bottom: 2px solid rgba(0,0,0,.08);
+padding-bottom: .5rem;
+}
+
+
+ @media all and (max-width: 730px) {
+.parent {
+width: 100%;
+margin-top: 4rem;
+margin-left: 0;
+}
+
+} 

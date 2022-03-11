@@ -1,0 +1,53 @@
+.page {
+height: 86.5vh;
+}
+
+.auth {
+  margin: 2rem auto;
+  width: 95%;
+  max-width: 40rem;
+  border-radius: 6px;
+  background-color: #212529;
+color: white;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
+  padding: 1rem;
+  text-align: start;
+}
+
+  .auth h1 {
+text-align: center;
+}
+
+.actions {
+  margin-top: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.actions button {
+  cursor: pointer;
+  color: black;
+  background-color: #f8f9fa;
+  border: 1px solid #f8f9fa;
+  border-radius: 4px;
+  padding: 0.5rem 2.5rem;
+}
+
+
+ @media all and (max-width: 400px) {
+.page {
+height: 100vh;
+}
+
+
+} 
+
+
+@media all and (max-height: 601px) {
+.page {
+height: 110vh;
+}
+
+
+} 

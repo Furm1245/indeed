@@ -1,0 +1,55 @@
+
+a {
+text-decoration: none;
+color:black
+}
+
+.card :hover {
+color: black;
+text-decoration:underline ;
+}
+
+.card {
+display: flex;
+flex-direction: column;
+width: 30rem;
+max-height: 18rem;
+border: 1px solid grey;
+border-radius: 10px;
+padding: 2rem;
+margin-right: 2rem;
+margin-bottom: 2rem;
+overflow:hidden;
+cursor: pointer;
+}
+
+.row {
+display: inline-block;
+border-radius: .25rem;
+padding: 0.1rem 1rem;
+font-weight: 600;
+}
+
+@media all and (max-width: 980px) {
+.card {
+width: 35rem;
+max-height: 18rem;
+}
+} 
+
+@media all and (max-width: 590px) {
+.card {
+width: 25rem;
+max-height: 20rem;
+margin-right: 0;
+}
+}
+
+@media all and (max-width: 430px) {
+.card {
+width: 95%;
+margin-left: .5rem;
+max-height: 20rem;
+margin-right: 0;
+}
+}
