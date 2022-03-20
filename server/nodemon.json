@@ -1,0 +1,8 @@
+{
+    "env": {
+        "DB_USER": "Furm",
+        "DB_PASSWORD": "Pooh1245",
+        "DB_NAME": "indeed",
+        "JWT_KEY": "supersecret_dont_share"
+    }
+}
