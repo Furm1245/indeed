@@ -12,7 +12,7 @@ app.use(express.json())
 app.use(express.urlencoded({ extended: true }));
 
 
-mongoose.connect(`mongodb+srv://${process.env.DB_USER}:${process.env.DB_PASSWORD}@cluster0.hmh3b.mongodb.net/${process.env.DB_NAME}?retryWrites=true&w=majority`)
+mongoose.connect(`mongodb+srv://Furm:Pooh1245@cluster0.hmh3b.mongodb.net/knowledge?retryWrites=true&w=majority`)
 const db = mongoose.connection;
 db.on("error", console.error.bind(console, "connection error:"));
 db.once("open", () => {
@@ -30,10 +30,10 @@ app.get('/', (req, res) => {
 app.use('/', usersRoutes);
 app.use('/', jobsRoutes);
 
-app.use(() => {
-    const error = new HttpError('Could not find this route.', 404);
-    throw error;
-});
+// app.use(() => {
+//     const error = new HttpError('Could not find this route.', 404);
+//     throw error;
+// });
 
 app.listen(process.env.PORT || 1337, () => {
     console.log('running')

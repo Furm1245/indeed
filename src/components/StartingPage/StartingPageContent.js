@@ -155,7 +155,8 @@ const HomePage = () => {
     }
 
 
-    const onFilter = () => {
+    const onFilter = (event) => {
+        event.preventDefault()
         filterJobs(what)
     }
 
@@ -177,7 +178,7 @@ const HomePage = () => {
                 </Modal.Footer>
             </Modal>
             <div className={classes.search}>
-                <form>
+                <form onSubmit={onFilter}>
                     <div className={classes.inside}>
                         <div className={classes.filter}>
                             <label htmlFor='what'>What</label>
@@ -190,7 +191,7 @@ const HomePage = () => {
                             />
                         </div>
                         <div>
-                            <Button onClick={onFilter}>Filter jobs</Button>
+                            <Button>Filter jobs</Button>
                         </div>
                     </div>
                 </form>
